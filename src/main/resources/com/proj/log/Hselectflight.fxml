@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="anchorpane1" stylesheets="@login_design.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proj.log.Hselectflight">
+   <children>
+      <TableView fx:id="flightsTableView" layoutX="35.0" layoutY="75.0" onMouseClicked="#onFlightSelected" prefHeight="250.0" prefWidth="529.0" style="-fx-background-color: #fff;" stylesheets="@login_design.css">
+         <columns>
+            <TableColumn fx:id="flightIdColumn" prefWidth="75.0" text="FlightId" />
+            <TableColumn fx:id="flightNameColumn" prefWidth="75.0" text="Flight Name" />
+            <TableColumn fx:id="originColumn" prefWidth="75.0" text="Departure" />
+            <TableColumn fx:id="destinationColumn" prefWidth="75.0" text="Destination" />
+            <TableColumn fx:id="timeColumn" prefWidth="75.0" text="Time" />
+            <TableColumn fx:id="dayColumn" prefWidth="75.0" text="Day" />
+            <TableColumn fx:id="ticketPriceColumn" prefWidth="75.0" text="Price" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

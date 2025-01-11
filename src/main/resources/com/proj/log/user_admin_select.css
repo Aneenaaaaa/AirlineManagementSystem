@@ -1,0 +1,25 @@
+.card1{
+      -fx-background-color:#fff;
+      -fx-background-radius:20px 20px 20px 20px;
+      -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.4), 5,0,0,0);
+}
+
+.card2{
+      -fx-background-color:linear-gradient(to bottom right, #334eac ,#7c96d1);
+      -fx-background-radius:20px 20px 20px 20px;
+      -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.4), 5,0,0,0);
+}
+
+.btn{
+
+   -fx-background-color:linear-gradient(to bottom right, #334eac ,#7c96d1);
+   -fx-border:none;
+   -fx-outline:none;
+   -fx-background-radius:25px;
+   -fx-box-shadow:0 0 10px rgba(0, 0, 0, .1);
+   -fx-cursor:hand;
+}
+
+.btn:hover{
+   -fx-background-color:#5e87ee;
+}

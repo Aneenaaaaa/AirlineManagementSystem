@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="531.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proj.log.AddFlightController">
+
+    <!-- Flight ID -->
+    <Label layoutX="28.0" layoutY="34.0" text="Flight ID" />
+    <TextField fx:id="flightIDField" layoutX="150" layoutY="30" prefWidth="200" />
+
+    <!-- Flight Number -->
+    <Label layoutX="30" layoutY="70" text="Flight Name" />
+    <TextField fx:id="flightNumberField" layoutX="150" layoutY="70" prefWidth="200" />
+
+    <!-- Origin -->
+    <Label layoutX="30" layoutY="110" text="Origin" />
+    <TextField fx:id="originField" layoutX="150" layoutY="110" prefWidth="200" />
+
+    <!-- Destination -->
+    <Label layoutX="30" layoutY="150" text="Destination" />
+    <TextField fx:id="destinationField" layoutX="150" layoutY="150" prefWidth="200" />
+
+    <!-- Day -->
+    <Label layoutX="30" layoutY="190" text="Day" />
+    <TextField fx:id="dayField" layoutX="150" layoutY="190" prefWidth="200" />
+
+    <!-- Time -->
+    <Label layoutX="30" layoutY="230" text="Time" />
+    <TextField fx:id="timeField" layoutX="150.0" layoutY="240.0" prefWidth="200" />
+
+    <!-- Warning Label -->
+    <Label fx:id="warningLabel" layoutX="150" layoutY="260" prefWidth="200" />
+
+    <!-- Add Flight Button -->
+    <Button fx:id="addflightwindow" layoutX="150.0" layoutY="390.0" onAction="#addFlightOnAction" text="Add " />
+
+    <!-- Close Button -->
+    <Button layoutX="250.0" layoutY="390.0" text="Close" />
+   <Label layoutX="30.0" layoutY="322.0" text="Ticket price" />
+   <TextField fx:id="ticketPriceField" layoutX="150.0" layoutY="318.0" prefWidth="200" />
+
+</AnchorPane>

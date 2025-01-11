@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="869.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proj.log.TicketControl">
+    <children>
+        <AnchorPane layoutX="42.0" layoutY="112.0" prefHeight="275.0" prefWidth="691.0" style="-fx-border-color: black; -fx-padding: 10;">
+            <children>
+                <!-- Flight Information -->
+                <Text layoutX="32.0" layoutY="80.0" text="Flight" wrappingWidth="100.0" />
+                <TextField fx:id="flightField" layoutX="32.0" layoutY="100.0" prefHeight="26.0" prefWidth="120.0" />
+
+                <!-- Boarding Point -->
+                <Text layoutX="217.0" layoutY="80.0" text="Boarding Point" wrappingWidth="100.0" />
+                <TextField fx:id="boardingPointField" layoutX="217.0" layoutY="100.0" prefHeight="26.0" prefWidth="140.0" />
+
+                <!-- Gate -->
+                <Text layoutX="414.0" layoutY="80.0" text="Gate" />
+                <TextField fx:id="gateField" layoutX="414.0" layoutY="100.0" prefHeight="26.0" prefWidth="80.0" />
+
+                <!-- Seat -->
+                <Text layoutX="545.0" layoutY="80.0" text="Seat" />
+                <TextField fx:id="seatField" layoutX="545.0" layoutY="100.0" prefHeight="26.0" prefWidth="80.0" />
+
+                <!-- Passenger Information -->
+                <Text layoutX="32.0" layoutY="160.0" text="Passenger" wrappingWidth="80.0" />
+                <TextField fx:id="passengerField" layoutX="116.0" layoutY="140.0" prefHeight="26.0" prefWidth="200.0" />
+
+                <!-- Class -->
+                <Text layoutX="362.0" layoutY="160.0" text="Class" wrappingWidth="60.0" />
+                <TextField fx:id="classField" layoutX="455.0" layoutY="140.0" prefHeight="26.0" prefWidth="80.0" />
+
+                <!-- From Location -->
+                <Text layoutX="32.0" layoutY="220.0" text="From" wrappingWidth="80.0" />
+                <TextField fx:id="fromField" layoutX="112.0" layoutY="200.0" prefHeight="26.0" prefWidth="200.0" />
+
+                <!-- To Location -->
+                <Text layoutX="362.0" layoutY="220.0" text="To" />
+                <TextField fx:id="toField" layoutX="455.0" layoutY="200.0" prefHeight="26.0" prefWidth="200.0" />
+
+                <!-- Date -->
+                <Text layoutX="32.0" layoutY="280.0" text="Date" />
+                <DatePicker fx:id="dateField" layoutX="112.0" layoutY="260.0" prefWidth="200.0" promptText="DD/MM/YYYY" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

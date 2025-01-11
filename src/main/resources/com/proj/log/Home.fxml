@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="930.0" stylesheets="@home.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proj.log.Home">
+    <ImageView fitHeight="549.0" fitWidth="736.0" layoutX="265.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@sky.jpg" />
+    </ImageView>
+   <!-- <ImageView fitHeight="549.0" fitWidth="735.0" layoutX="198.0" pickOnBounds="true" preserveRatio="true" styleClass="img">
+       <Image url="@Thesoftandcomfortingplace.jpeg" />
+
+    </ImageView>-->
+    <Label alignment="CENTER" layoutX="64.0" layoutY="64.0" prefHeight="40.0" prefWidth="182.0" stylesheets="@home.css" text="Smart Airlines">
+        <font>
+            <Font name="System Bold" size="20.0" />
+        </font>
+    </Label>
+    <Label layoutX="105.0" layoutY="136.0" prefHeight="108.0" prefWidth="118.0" text="Label" textFill="#ff00cd" />
+    <AnchorPane layoutY="-1.0" prefHeight="550.0" prefWidth="530.0" styleClass="card2" stylesheets="@home.css">
+        <AnchorPane layoutX="-4.0" layoutY="45.0" prefHeight="461.0" prefWidth="482.0" styleClass="card2" stylesheets="@home.css">
+            <children>
+                <Label alignment="CENTER" layoutX="14.0" layoutY="231.0" prefHeight="94.0" prefWidth="366.0" text="EXPLORE" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="48.0" />
+                    </font>
+                </Label>
+            </children>
+      </AnchorPane>
+        <AnchorPane layoutX="14.0" layoutY="61.0" />
+        <Button fx:id="loginBtn" layoutX="83.0" layoutY="398.0" mnemonicParsing="false" onAction="#login_page" prefHeight="52.0" prefWidth="222.0" stylesheets="@home.css" text="Login to Continue" textFill="WHITE">
+            <font>
+                <Font name="Comic Sans MS" size="14.0" />
+            </font>
+            <styleClass>
+                <String fx:value="btn" />
+                <String fx:value="btn" />
+            </styleClass>
+        </Button>
+        <Label alignment="CENTER" layoutX="60.0" layoutY="213.0" prefHeight="94.0" prefWidth="366.0" text="DO YOU WANT TO" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="-31.0" layoutY="149.0" prefHeight="94.0" prefWidth="366.0" text="WHERE " textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+    </AnchorPane>
+   <ImageView fitHeight="296.0" fitWidth="420.0" layoutX="445.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@flight-removebg-preview.png" />
+      </image>
+   </ImageView>
+</AnchorPane>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="713.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proj.log.UserDashboard">
+    <children>
+      <AnchorPane layoutX="334.0" layoutY="-2.0" prefHeight="714.0" prefWidth="547.0" style="-fx-background-color: #fff;">
+         <children>
+            <Button layoutX="105.0" layoutY="458.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="195.0" styleClass="loginBtn" stylesheets="@login_design.css" text="Learn More" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+        <!-- Left Pane -->
+        <AnchorPane prefHeight="552.0" prefWidth="282.0" styleClass="anchorpane1" stylesheets="@login_design.css">
+            <children>
+            <AnchorPane layoutY="218.0" prefHeight="492.0" prefWidth="334.0" styleClass="anchorpane1" stylesheets="@home.css">
+               <children>
+      
+                      <Button fx:id="signoutbutton" layoutX="87.0" layoutY="392.0" onAction="#handleSignOut" prefHeight="50.0" prefWidth="160.0" styleClass="Btn" stylesheets="@home.css" text="SIGN OUT" textFill="#fffdfd" AnchorPane.leftAnchor="87.0" AnchorPane.topAnchor="392.0">
+                          <font>
+                              <Font size="18.0" />
+                          </font>
+                      </Button>
+      
+                      <Button fx:id="showticketbutton" layoutX="87.0" layoutY="292.0" onAction="#Onclickusershowticket" prefHeight="49.0" prefWidth="160.0" styleClass="Btn" stylesheets="@home.css" text="SHOW TICKET" textFill="#fffdfd" AnchorPane.leftAnchor="87.0" AnchorPane.topAnchor="292.0">
+                          <font>
+                              <Font size="18.0" />
+                          </font>
+                      </Button>
+      
+                      <Button fx:id="cancelticketbutton" layoutX="87.0" layoutY="199.0" onAction="#handleCancelTicketButton" prefHeight="50.0" prefWidth="160.0" styleClass="Btn" stylesheets="@home.css" text="CANCEL TICKET" textFill="#fffdfd" AnchorPane.leftAnchor="87.0" AnchorPane.topAnchor="199.0">
+                          <font>
+                              <Font size="18.0" />
+                          </font>
+                      </Button>
+      
+                      <!-- Buttons -->
+                      <Button fx:id="bookticketbutton" layoutX="87.0" layoutY="100.0" onAction="#OnActionbookticket" prefHeight="50.0" prefWidth="160.0" style="-fx-font-style: ;" styleClass="Btn" stylesheets="@home.css" text="BOOK TICKET" textFill="#fffdfd" AnchorPane.leftAnchor="87.0" AnchorPane.topAnchor="100.0">
+                          <font>
+                              <Font size="18.0" />
+                          </font>
+                      </Button>
+               </children>
+            </AnchorPane>
+                <AnchorPane layoutX="38.0" prefHeight="99.0" prefWidth="248.0">
+               <children>
+                  <Label layoutX="80.0" layoutY="50.0" text="USER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+
+                      <!-- Dashboard Title -->
+                <Text fill="WHITE" layoutX="76.0" layoutY="127.0" text="DASHBOARD" textAlignment="CENTER" wrappingWidth="172.0" AnchorPane.leftAnchor="76.0" AnchorPane.topAnchor="98.0">
+                    <font>
+                        <Font name="System Bold" size="27.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+      <Label layoutX="462.0" layoutY="158.0" prefWidth="146.0" text="TIME TO ">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="426.0" layoutY="187.0" prefHeight="70.0" prefWidth="195.0" text="TRAVEL" textFill="#334eac">
+         <font>
+            <Font name="System Bold" size="52.0" />
+         </font>
+      </Label>
+      <Label layoutX="383.0" layoutY="281.0" prefHeight="27.0" prefWidth="389.0" text="Throughout our lives,people have thought that">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="308.0" prefHeight="27.0" prefWidth="410.0" text="because we keep travelling and searching for new">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="383.0" layoutY="335.0" prefHeight="27.0" prefWidth="410.0" text="things to do,we are not focused.They have often">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="409.0" layoutY="362.0" prefHeight="27.0" prefWidth="410.0" text="thought we are flasky or unfocused">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+
+    </children>
+</AnchorPane>
