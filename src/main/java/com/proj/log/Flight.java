@@ -1,39 +1,31 @@
 package com.proj.log;
 
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.SimpleIntegerProperty;
+import java.time.LocalDate;
 
 public class Flight {
-    private Integer flightId;
-    private String flightName;
-    private String origin;
-    private String destination;
-    private String time;
-    private String days;
-    private final IntegerProperty ticketPrice; // Use JavaFX IntegerProperty
+    private int flightId;          // Corresponds to flight_id in the database
+    private String flightName;     // Corresponds to flight_name in the database
+    private String departure;      // Corresponds to departure in the database
+    private String destination;    // Corresponds to destination in the database
+    private LocalDate date;        // Corresponds to date in the database
+    private String departureTime;  // Corresponds to departure_time in the database
 
-    // Constructor with parameters
-    public Flight(Integer flightId, String flightName, String origin, String destination, String time, String days, int ticketPrice) {
+    // Constructor
+    public Flight(int flightId, String flightName, String departure, String destination, LocalDate date, String departureTime) {
         this.flightId = flightId;
         this.flightName = flightName;
-        this.origin = origin;
+        this.departure = departure;
         this.destination = destination;
-        this.time = time;
-        this.days = days;
-        this.ticketPrice = new SimpleIntegerProperty(ticketPrice); // Initialize ticketPrice
-    }
-
-    // No-argument constructor for retrieval
-    public Flight() {
-        this.ticketPrice = new SimpleIntegerProperty(); // Initialize with a default value
+        this.date = date;
+        this.departureTime = departureTime;
     }
 
     // Getters and Setters
-    public Integer getFlightId() {
+    public int getFlightId() {
         return flightId;
     }
 
-    public void setFlightId(Integer flightId) {
+    public void setFlightId(int flightId) {
         this.flightId = flightId;
     }
 
@@ -45,12 +37,12 @@ public class Flight {
         this.flightName = flightName;
     }
 
-    public String getOrigin() {
-        return origin;
+    public String getDeparture() {
+        return departure;
     }
 
-    public void setOrigin(String origin) {
-        this.origin = origin;
+    public void setDeparture(String departure) {
+        this.departure = departure;
     }
 
     public String getDestination() {
@@ -61,34 +53,19 @@ public class Flight {
         this.destination = destination;
     }
 
-    public String getTime() {
-        return time;
+    public LocalDate getDate() {
+        return date;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
-    public String getDays() {
-        return days;
+    public String getDepartureTime() {
+        return departureTime;
     }
 
-    public void setDays(String days) {
-        this.days = days;
+    public void setDepartureTime(String departureTime) {
+        this.departureTime = departureTime;
     }
-
-    public int getTicketPrice() {
-        return ticketPrice.get(); // Return the value of the property
-    }
-
-    public void setTicketPrice(int ticketPrice) {
-        this.ticketPrice.set(ticketPrice); // Set the value of the property
-    }
-
-    public IntegerProperty ticketPriceProperty() { // Add this method for property binding
-        return ticketPrice;
-    }
-
-  /*  public  getAirline() {
-    }*/
 }

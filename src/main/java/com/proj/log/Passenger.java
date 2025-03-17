@@ -1,49 +1,44 @@
 package com.proj.log;
 
-public class Passenger {
-    private String username;
-    private String flightName;
-    private String departure;
-    private String destination;
-    private String day;
-    private String time;
-    private String ticketPrice;
+import javafx.beans.property.SimpleStringProperty;
 
-    public Passenger(String username, String flightName, String departure, String destination, String day, String time, String ticketPrice) {
-        this.username = username;
-        this.flightName = flightName;
-        this.departure = departure;
-        this.destination = destination;
-        this.day = day;
-        this.time = time;
-        this.ticketPrice = ticketPrice;
+public class Passenger{
+    private final SimpleStringProperty passengerName;   // Property for passenger name
+    private final SimpleStringProperty passportNumber;   // Property for passport number
+    private final SimpleStringProperty gender;           // Property for gender
+
+    // Constructor
+    public Passenger(String passengerName, String passportNumber, String gender) {
+        this.passengerName = new SimpleStringProperty(passengerName);
+        this.passportNumber = new SimpleStringProperty(passportNumber);
+        this.gender = new SimpleStringProperty(gender);
     }
 
-    public String getUsername() {
-        return username;
+    // Getter for passenger name property
+    public SimpleStringProperty passengerNameProperty() {
+        return passengerName;
     }
 
-    public String getFlightName() {
-        return flightName;
+    // Getter for passport number property
+    public SimpleStringProperty passportNumberProperty() {
+        return passportNumber;
     }
 
-    public String getDeparture() {
-        return departure;
+    // Getter for gender property
+    public SimpleStringProperty genderProperty() {
+        return gender;
     }
 
-    public String getDestination() {
-        return destination;
+    // Optional: Getters for the actual values (if needed)
+    public String getPassengerName() {
+        return passengerName.get();
     }
 
-    public String getDay() {
-        return day;
+    public String getPassportNumber() {
+        return passportNumber.get();
     }
 
-    public String getTime() {
-        return time;
-    }
-
-    public String getTicketPrice() {
-        return ticketPrice;
+    public String getGender() {
+        return gender.get();
     }
 }

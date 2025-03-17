@@ -13,12 +13,14 @@
    <children>
       <AnchorPane layoutX="-2.0" prefHeight="566.0" prefWidth="266.0" styleClass="anchorpane1" stylesheets="@login_design.css">
          <children>
-            <AnchorPane layoutY="183.0" prefHeight="382.0" prefWidth="266.0" styleClass="anchorpane1" stylesheets="@home.css">
+            <AnchorPane layoutX="3.0" layoutY="183.0" prefHeight="382.0" prefWidth="266.0" styleClass="anchorpane1" stylesheets="@home.css">
                <children>
-                  <Button fx:id="showflightsbutton" layoutX="42.0" layoutY="115.0" mnemonicParsing="false" onAction="#showflightsbuttonOnAction" prefHeight="31.0" prefWidth="149.0" styleClass="Btn" stylesheets="@home.css" text="Show flights" textFill="WHITE" />
-                  <Button fx:id="passengerbutton" layoutX="42.0" layoutY="191.0" mnemonicParsing="false" onAction="#passengerbuttonOnAction" prefHeight="31.0" prefWidth="150.0" styleClass="Btn" stylesheets="@home.css" text="Passenger List" textFill="WHITE" />
-                  <Button fx:id="signout" layoutX="10.0" layoutY="284.0" mnemonicParsing="false" onAction="#signoutOnAction" prefHeight="38.0" prefWidth="97.0" styleClass="Btn" stylesheets="@home.css" text="Sign out" textFill="WHITE" />
-                  <Button fx:id="exitbutton" layoutX="145.0" layoutY="284.0" mnemonicParsing="false" onAction="#exitOnAction" prefHeight="38.0" prefWidth="106.0" styleClass="Btn" stylesheets="@home.css" text="Exit" textFill="WHITE" />
+                  <Button fx:id="showflightsbutton" layoutX="40.0" layoutY="23.0" mnemonicParsing="false" onAction="#showflightsbuttonOnAction" prefHeight="31.0" prefWidth="149.0" styleClass="Btn" stylesheets="@home.css" text="Show flights" textFill="WHITE" />
+                  <Button fx:id="passengerbutton" layoutX="36.0" layoutY="81.0" mnemonicParsing="false" onAction="#passengerbuttonOnAction" prefHeight="31.0" prefWidth="150.0" styleClass="Btn" stylesheets="@home.css" text="Passenger List" textFill="WHITE" />
+                  <Button fx:id="signout" layoutX="14.0" layoutY="264.0" mnemonicParsing="false" onAction="#signoutOnAction" prefHeight="38.0" prefWidth="97.0" styleClass="Btn" stylesheets="@home.css" text="Sign out" textFill="WHITE" />
+                  <Button fx:id="exitbutton" layoutX="136.0" layoutY="264.0" mnemonicParsing="false" onAction="#exitOnAction" prefHeight="38.0" prefWidth="106.0" styleClass="Btn" stylesheets="@home.css" text="Exit" textFill="WHITE" />
+                  <Button fx:id="filterbutton" layoutX="40.0" layoutY="134.0" mnemonicParsing="false" onAction="#filterbuttonOnAction" prefHeight="31.0" prefWidth="149.0" styleClass="Btn" stylesheets="@home.css" text="Filter by date" textFill="WHITE" />
+                  <Button fx:id="filterbuttoncommon" layoutX="40.0" layoutY="191.0" mnemonicParsing="false" onAction="#filterallOnAction" prefHeight="31.0" prefWidth="149.0" styleClass="Btn" stylesheets="@home.css" text="Filter " textFill="WHITE" />
                </children>
             </AnchorPane>
             <Text fill="WHITE" layoutX="55.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" textAlignment="CENTER" wrappingWidth="117.39208984375006">

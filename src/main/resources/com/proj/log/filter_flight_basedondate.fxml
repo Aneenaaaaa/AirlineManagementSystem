@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proj.log.filterController">
+   <children>
+      <TableView fx:id="flightTableView" layoutX="19.0" layoutY="92.0" prefHeight="292.0" prefWidth="598.0">
+        <columns>
+          <TableColumn fx:id="flight_number" prefWidth="101.60000801086426" text="Flight Number" />
+            <TableColumn fx:id="destination" prefWidth="195.20001220703125" text="Destination" />
+            <TableColumn fx:id="departure_time" prefWidth="150.40005493164062" text="Departure Time" />
+          <TableColumn fx:id="source" prefWidth="151.20000457763672" text="Source" />
+        </columns>
+      </TableView>
+      <Label layoutX="56.0" layoutY="32.0" text="Enter date" />
+      <DatePicker fx:id="date_picker" layoutX="151.0" layoutY="28.0" />
+   </children>
+</AnchorPane>

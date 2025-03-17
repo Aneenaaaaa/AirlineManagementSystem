@@ -19,7 +19,7 @@ public class HelloController {
     public void showflightsbuttonOnAction(ActionEvent ev) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("showflights.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 705, 505);
+            Scene scene = new Scene(fxmlLoader.load(), 1000, 1000);
 
             Stage stage = new Stage();
             stage.setTitle("Show Flights");
@@ -59,36 +59,63 @@ public class HelloController {
             e.printStackTrace();
         }
     }
-    @FXML // Ensure this annotation is present
+
+    @FXML
     public void signoutOnAction(ActionEvent event) {
-        // Show sign out notification
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Sign Out");
         alert.setHeaderText(null);
         alert.setContentText("You have signed out.");
-        alert.showAndWait();  // Wait for the user to close the alert
+        alert.showAndWait();
 
-        // Redirect to AdminLogin page
         try {
-            // Load AdminLogin.fxml
             FXMLLoader loader = new FXMLLoader(getClass().getResource("adminlogin.fxml"));
             Parent root = loader.load();
 
-            // Get the current stage (window) and set the new scene
             Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.setTitle("Admin Login");
             stage.show();
-
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
     @FXML
     public void exitOnAction(ActionEvent event) {
-        // Get the stage (window) and close it
         Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
         stage.close();
+    }
+
+    @FXML
+    public void filterbuttonOnAction(ActionEvent ev) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("filter_flight_basedondate.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 705, 505);
+
+            Stage stage = new Stage();
+            stage.setTitle("Filter Flights Based on Date");
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    // New function to open filterall.fxml
+    @FXML
+    public void filterallOnAction(ActionEvent ev) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("filterall.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 705, 505);
+
+            Stage stage = new Stage();
+            stage.setTitle("Filter All Flights");
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

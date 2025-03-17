@@ -9,46 +9,60 @@
 
 <AnchorPane prefHeight="675.0" prefWidth="816.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proj.log.Usersignup">
     <children>
-        <AnchorPane prefHeight="286.0" prefWidth="816.0" styleClass="anchorpane1" stylesheets="@login_design.css" />
-        <AnchorPane layoutX="149.0" layoutY="207.0" prefHeight="358.0" prefWidth="518.0" styleClass="anchorpane2" stylesheets="@login_design.css">
-            <children>
-                <Label alignment="CENTER" layoutX="183.0" layoutY="48.0" prefHeight="51.0" prefWidth="150.0" text="Sign Up">
-                    <font>
-                        <Font name="System Bold" size="35.0" />
-                    </font>
-                </Label>
-                <Label layoutX="141.0" layoutY="263.0" text="Password">
-                    <font>
+        <AnchorPane layoutX="-3.0" layoutY="-1.0" prefHeight="515.0" prefWidth="835.0" styleClass="anchorpane1" stylesheets="@login_design.css">
+         <children>
+              <AnchorPane layoutX="170.0" layoutY="140.0" prefHeight="358.0" prefWidth="518.0" styleClass="anchorpane2" stylesheets="@login_design.css">
+                  <children>
+                      <Label alignment="CENTER" layoutX="183.0" layoutY="48.0" prefHeight="51.0" prefWidth="150.0" text="Sign Up">
+                          <font>
+                              <Font name="System Bold" size="35.0" />
+                          </font>
+                      </Label>
+                      <Label layoutX="102.0" layoutY="154.0" text="Password">
+                          <font>
+                              <Font size="20.0" />
+                          </font>
+                      </Label>
+                      <Label layoutX="102.0" layoutY="113.0" text=" Name">
+                          <font>
+                              <Font size="20.0" />
+                          </font>
+                      </Label>
+                      <Label alignment="CENTER" layoutX="87.0" layoutY="231.0" prefHeight="22.0" prefWidth="88.0" text="Email">
+                          <font>
+                              <Font size="20.0" />
+                          </font>
+                      </Label>
+                      <Label layoutX="64.0" layoutY="189.0" text="Confirm Password">
+                          <font>
+                              <Font size="20.0" />
+                          </font>
+                      </Label>
+                      <TextField fx:id="tf_username" layoutX="262.0" layoutY="115.0" prefHeight="26.0" prefWidth="150.0" styleClass="loginTextFields" stylesheets="@login_design.css" />
+                      <PasswordField fx:id="tf_email" layoutX="258.0" layoutY="233.0" styleClass="loginTextFields" stylesheets="@login_design.css" />
+                      <PasswordField fx:id="tf_passportno" layoutX="258.0" layoutY="264.0" styleClass="loginTextFields" stylesheets="@login_design.css" />
+                      <Label layoutX="77.0" layoutY="262.0" text="Passport No">
+                          <font>
+                              <Font size="20.0" />
+                          </font>
+                      </Label>
+                      <Button fx:id="signupSubmit" alignment="CENTER" layoutX="180.0" layoutY="386.0" mnemonicParsing="false" onAction="#signup_to_login" prefHeight="37.0" prefWidth="157.0" styleClass="loginBtn" stylesheets="@login_design.css" text="Submit" textFill="WHITE" />
+                  <Label layoutX="100.0" layoutY="291.0" text="DOB">
+                     <font>
                         <Font size="20.0" />
-                    </font>
-                </Label>
-                <Label layoutX="134.0" layoutY="126.0" text="User Name">
-                    <font>
+                     </font>
+                  </Label>
+                  <Label layoutX="73.0" layoutY="345.0" text="Phone Number">
+                     <font>
                         <Font size="20.0" />
-                    </font>
-                </Label>
-                <Label alignment="CENTER" layoutX="159.0" layoutY="177.0" prefHeight="22.0" prefWidth="88.0" text="Email">
-                    <font>
-                        <Font size="20.0" />
-                    </font>
-                </Label>
-                <Label layoutX="65.0" layoutY="302.0" text="Confirm Password">
-                    <font>
-                        <Font size="20.0" />
-                    </font>
-                </Label>
-                <TextField fx:id="tf_username" layoutX="277.0" layoutY="128.0" prefHeight="26.0" prefWidth="150.0" styleClass="loginTextFields" stylesheets="@login_design.css" />
-                <TextField fx:id="tf_mail" layoutX="278.0" layoutY="179.0" styleClass="loginTextFields" stylesheets="@login_design.css" />
-                <PasswordField fx:id="tf_password" layoutX="279.0" layoutY="265.0" styleClass="loginTextFields" stylesheets="@login_design.css" />
-                <PasswordField fx:id="tf_confirmPassword" layoutX="279.0" layoutY="304.0" styleClass="loginTextFields" stylesheets="@login_design.css" />
-                <Label layoutX="117.0" layoutY="219.0" text="Passport No">
-                    <font>
-                        <Font size="20.0" />
-                    </font>
-                </Label>
-                <TextField fx:id="passport" layoutX="278.0" layoutY="221.0" prefHeight="26.0" prefWidth="150.0" styleClass="loginTextFields" stylesheets="@login_design.css" />
-                <Button fx:id="signupSubmit" alignment="CENTER" layoutX="180.0" layoutY="386.0" mnemonicParsing="false" onAction="#signup_to_login" prefHeight="37.0" prefWidth="157.0" styleClass="loginBtn" stylesheets="@login_design.css" text="Submit" textFill="WHITE" />
-            </children>
-        </AnchorPane>
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="tf_phonenumber" layoutX="251.0" layoutY="347.0" styleClass="loginTextFields" stylesheets="@login_design.css" />
+                  <PasswordField fx:id="tf_dob" layoutX="251.0" layoutY="293.0" styleClass="loginTextFields" stylesheets="@login_design.css" />
+                  <PasswordField fx:id="tfpassword" layoutX="263.0" layoutY="154.0" />
+                  <PasswordField fx:id="tfconfirmpassword" layoutX="263.0" layoutY="191.0" />
+                  </children>
+              </AnchorPane>
+         </children></AnchorPane>
     </children>
 </AnchorPane>

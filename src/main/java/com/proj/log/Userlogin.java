@@ -15,6 +15,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Userlogin {
+
     @FXML
     private Hyperlink signup;
 
@@ -25,7 +26,7 @@ public class Userlogin {
     private TextField tf_username;
 
     @FXML
-    private PasswordField tf_password; // Changed to PasswordField for security
+    private PasswordField tf_password;
 
     @FXML
     private Label loginMessageLabel;
@@ -53,7 +54,8 @@ public class Userlogin {
             return;
         }
 
-        String verifyLogin = "SELECT count(1) FROM userstable WHERE first_name = ? AND password = ?";
+        // SQL query to validate username and password
+        String verifyLogin = "SELECT * FROM user_airline WHERE user_name = ? AND user_password = ?";
 
         try (PreparedStatement preparedStatement = connectDB.prepareStatement(verifyLogin)) {
             preparedStatement.setString(1, tf_username.getText());
@@ -61,8 +63,8 @@ public class Userlogin {
 
             ResultSet queryResult = preparedStatement.executeQuery();
 
-            if (queryResult.next() && queryResult.getInt(1) == 1) {
-                loginMessageLabel.setText("Login successful! Welcome.");
+            if (queryResult.next()) {
+                loginMessageLabel.setText("Login successful! Welcome, " + queryResult.getString("user_name") + ".");
                 loadUserDashboard(); // Call method to load the User Dashboard
             } else {
                 loginMessageLabel.setText("Invalid login. Please try again.");
@@ -96,7 +98,6 @@ public class Userlogin {
             showAlert("Loading Error", "Could not load the User Dashboard.");
         }
     }
-
 
     // Method to show an alert in case of invalid login
     private void showAlert(String title, String message) {

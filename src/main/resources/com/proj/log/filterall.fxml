@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="685.0" prefWidth="732.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proj.log.Filterall">
+   <children>
+      <AnchorPane layoutX="22.0" layoutY="56.0" prefHeight="242.0" prefWidth="338.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="tableview1" layoutX="14.0" layoutY="16.0" prefHeight="200.0" prefWidth="298.0">
+              <columns>
+                <TableColumn fx:id="flightname" prefWidth="139.1999740600586" text="Flight name" />
+                  <TableColumn fx:id="bookingcount" prefWidth="159.20001220703125" text="Booking Count" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorpane2" layoutX="264.0" layoutY="353.0" prefHeight="225.0" prefWidth="424.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="tableview2" layoutX="31.0" layoutY="7.0" prefHeight="200.0" prefWidth="324.0">
+              <columns>
+                <TableColumn fx:id="passengername" prefWidth="113.5999755859375" text="Passenger Name" />
+                <TableColumn fx:id="passportnumber" prefWidth="107.20004272460938" text="Passport Number" />
+                  <TableColumn fx:id="gender" prefWidth="107.20004272460938" text="Gender" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Text fx:id="text1" fill="#0b0101" layoutX="84.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px;" text="Flights with their  Booking Counts" wrappingWidth="244.2406005859375" />
+      <Text fx:id="text2" fill="#0b0101" layoutX="14.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px;" text="Customer details based on flight booking" wrappingWidth="216.2406005859375" />
+      <Text fx:id="text3" fill="#0b0101" layoutX="74.0" layoutY="611.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px;" text="Flight name with highest number of bookings" wrappingWidth="287.44061279296875" />
+      <TextField fx:id="count" layoutX="340.0" layoutY="602.0" prefHeight="34.0" prefWidth="150.0" />
+      <Text fx:id="text21" fill="#0b0101" layoutX="40.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px;" text=" Flight name" wrappingWidth="131.4405517578125" />
+      <TextField fx:id="count1" layoutX="40.0" layoutY="443.0" prefHeight="34.0" prefWidth="150.0" promptText="Enter flight name" />
+   </children>
+</AnchorPane>
